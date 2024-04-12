@@ -66,33 +66,33 @@ Compose:
     InvalidChartFile: |-
       Nama file chart yang diberikan tidak valid.
     NoChartIncluded: |-
-      Invalid project file: Tidak ada chart yang disertakan dalam project ini.
+      Project file invalid: Tidak ada chart yang disertakan dalam project ini.
     InvalidGroupProperties: |-
       Properti timing group tidak valid.  {Message}
     InstructionLimit: |-
-      Lua script execution has been aborted: Batas jumlah instruksi {0} sudah tercapai.
+      Eksekusi script lua dibatalkan: Batas jumlah instruksi {0} sudah tercapai.
     InvalidBaseBPM: |-
-      Invalid base bpm value: {0}
+      Nilai base BPM invalid: {0}
     CreateSkyNoteNoValidArc: |-
       Tidak dapat membuat sky note di sini. Sky note harus ditempatkan pada trace.
     Navigation:
       ParseKeybind: |-
-        An exception occured while parsing the keybind: "{0}".
+        Terjadi pengecualian saat mengurai keybind: "{0}".
       ParseWhitespace: |-
-        Invalid keybind: Keystroke tidak boleh berupa whitespace.
+        Keybind invalid: Keystroke tidak boleh berupa whitespace.
       InvalidKeystroke: |-
-        Invalid keystroke: Keystroke "{0}" tidak mengikuti format yang benar.
+        Keystroke invalid: Keystroke "{0}" tidak mengikuti format yang benar.
       InvalidKey: |-
-        Invalid key: String "{0}" tidak cocok dengan key apapun.
+        Key invalid: String "{0}" tidak cocok dengan key apapun.
       InvalidModifier: |-
-        Invalid modifier: String "{0}" tidak cocok dengan modifier key apapun.
+        Modifier invalid: String "{0}" tidak cocok dengan modifier key apapun.
       InvalidActionPath: |-
-        Invalid action path: String "{0}" tidak cocok dengan action apapun.
+        Action path invalid: String "{0}" tidak cocok dengan action apapun.
     Scenecontrol: |-
-      Error occured while executing scenecontrol event of type {Type}: {Message}
+      Terjadi kesalahan saat mengeksekusi event scenecontrol tipe {Type}: {Message}
       {StackTrace}
     LuaScript: |-
-      Error occured while executing lua script {Path}: {Message}
+      Terjadi kesalahan saat mengeksekusi script lua {Path}: {Message}
       {StackTrace}
     Render:
       FFmpeg:
@@ -100,10 +100,10 @@ Compose:
           Tidak dapat menemukan executable FFmpeg.
           Harap konfirmasi bahwa path yang dikonfigurasi {0} sudah benar.
         Start: |-
-          Error occured while starting FFmpeg at {Path}: {Message}
+          Terjadi kesalahan saat memulai FFmpeg di {Path}: {Message}
           {StackTrace}
         Write: |-
-          Error occured while writing to FFmpeg process: {Message}
+          Terjadi kesalahan saat menulis FFmpeg di {Path}: {Message}
           {StackTrace}
       Audio:
         IncompatibleSfx: |-
