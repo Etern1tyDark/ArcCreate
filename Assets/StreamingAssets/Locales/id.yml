@@ -25,69 +25,69 @@ Format:
     BaseTimingInvalid: |-
       Definisi base timing tidak valid. Pastikan chart anda dimulai dengan event timing di 0 ms.
     IncludeReferencedMultipleTimes: |-
-      A chart file was already included but is being referenced again.
+      File chart sudah disertakan tetapi direferensikan lagi.
     IncludeAReferencedFragment: |-
-      A chart file was already referenced as a fragment but is being included again.
+      File chart sudah direferensikan sebagai fragmen tetapi disertakan lagi.
     TimingGroupPairInvalid: |-
-      Invalid timing group symbol pairing. Make sure to enclose timing group definitions properly with "};".
+      Pasangan simbol timing group tidak valid. Pastikan mendefinisikan timing group dengan benar menggunakan "};".
     DivisorNegative: |-
-      Divisor property of timing event can not be negative.
+      Properti divisor dari event timing tidak bisa negatif.
     BaseBPMZero: |-
-      Base BPM can not be zero.
+      Base BPM (BPM dasar) tidak bisa nol.
     DurationNegative: |-
-      Duration of this event type can not be negative.
+      Durasi dari tipe event ini tidak bisa negatif.
     DurationZero: |-
-      Duration of this event type can not be zero.
+      Durasi dari tipe event ini tidak bisa sama dengan 0.
     ArcTapOutOfRange: |-
-      ArcTap is outside the timing range of its parent Arc.
+      ArcTap di luar rentang waktu dari Arc parentnya.
     TimingGroupPropertiesInvalid: |-
-      Invalid timing group properties definition.
+     Definisi properti timing group tidak valid.
   Warning:
     HoldTooShort:
-      Hold note's duration is shorter than 17ms.
+      Durasi hold note lebih pendek dari 17ms.
     TapJudgementOverlap:
-      Tap judgement overlaps with other notes.
+      Judgement tap bertabrakan dengan note lain.
 
 Compose:
   # Exception messages within the editor
   Exception:
     FileDoesNotExist: |-
-      Trying to read file located at {Path} but it does not exist. The file might have been deleted.
+      File dicoba dibaca di {Path} tetapi file tidak ada. File mungkin sudah dihapus.
     LoadImage: |-
-      An error occured while trying to load the image located at {Path}.
+      Terjadi kesalahan saat mencoba memuat gambar di {Path}.
       {Error}
     LoadProject: |-
-      An error occured while trying to load the project file located at {Path}.
-      The file could have been saved incorrectly.
-      You can try modifying it manually, or you can delete the file and create a new project.
+      Terjadi kesalahan saat mencoba memuat file proyek di {Path}.
+      File mungkin disimpan dengan tidak benar.  
+      Anda bisa mencoba memodifikasinya secara manual, atau menghapus file dan membuat proyek baru.
       {Error}
     ChartFileAlreadyExists: |-
-      Chart is already included in the project
+      Chart sudah disertakan dalam project ini.
     InvalidChartFile: |-
-      The provided chart file name is invalid
+      Nama file chart yang diberikan tidak valid.
     NoChartIncluded: |-
-      Invalid project file: No chart is included within this project.
+      Invalid project file: Tidak ada chart yang disertakan dalam project ini.
     InvalidGroupProperties: |-
-      Invalid timing group properties. {Message}
+      Properti timing group tidak valid.  {Message}
     InstructionLimit: |-
-      Lua script execution has been aborted: The instruction count limit of {0} was reached.
+      Lua script execution has been aborted: Batas jumlah instruksi {0} sudah tercapai.
     InvalidBaseBPM: |-
       Invalid base bpm value: {0}
     CreateSkyNoteNoValidArc: |-
-      Can not create sky note here. Sky notes must be placed on traces.
+      Tidak dapat membuat sky note di sini. Sky note harus ditempatkan pada trace.
     Navigation:
       ParseKeybind: |-
         An exception occured while parsing the keybind: "{0}".
       ParseWhitespace: |-
-        Invalid keybind: a keystroke can not be a whitespace.
+        Invalid keybind: Keystroke tidak boleh berupa whitespace.
       InvalidKeystroke: |-
-        Invalid keystroke: The keystroke "{0}" does not follow the correct format.
+        Invalid keystroke: Keystroke "{0}" tidak mengikuti format yang benar.
       InvalidKey: |-
-        Invalid key: The string "{0}" does not match any key.
+        Invalid key: String "{0}" tidak cocok dengan key apapun.
       InvalidModifier: |-
-        Invalid modifier: The string "{0}" does not match any modifier key.
+        Invalid modifier: String "{0}" tidak cocok dengan modifier key apapun.
       InvalidActionPath: |-
-        Invalid action path: The string "{0}" does not match any action.
+        Invalid action path: String "{0}" tidak cocok dengan action apapun.
     Scenecontrol: |-
       Error occured while executing scenecontrol event of type {Type}: {Message}
       {StackTrace}
@@ -97,8 +97,8 @@ Compose:
     Render:
       FFmpeg:
         NotFound: |-
-          Could not find any FFmpeg executable.
-          Please confirm that the configured path {0} is correct.
+          Tidak dapat menemukan executable FFmpeg.
+          Harap konfirmasi bahwa path yang dikonfigurasi {0} sudah benar.
         Start: |-
           Error occured while starting FFmpeg at {Path}: {Message}
           {StackTrace}
@@ -107,8 +107,8 @@ Compose:
           {StackTrace}
       Audio:
         IncompatibleSfx: |-
-          The audio clip {Sfx} is incompatible for rendering.
-          Expected channel count of {ExpectedChannels} and frequency of {ExpectedFrequency}, but the clip's channel count is {Channels} and its frequency is {Frequency}.
+          Clip audio {Sfx} tidak kompatibel untuk proses rendering.
+          Diharapkan konfigurasi jumlah channel {ExpectedChannels} dan frekuensi {ExpectedFrequency}, tetapi clip memiliki {Channels} channel dan frekuensi {Frequency}.
           
   # Notification messages
   Notify:
